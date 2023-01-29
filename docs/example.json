@@ -1,0 +1,16 @@
+{	
+	"positions": [{
+		"id": 1,
+		"type": "NORMAL",
+		"name": "name",
+		"details": "details",
+		"next": [2]
+	},
+	{
+		"id": 2,
+		"type": "COUNTER",
+		"name": "name 2",
+		"details": "details 2",
+		"parent": 1
+	}]		
+}
