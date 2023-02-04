@@ -29,6 +29,5 @@ export class Scenario {
 
 	constructor(positions?: Position[]) {
 		this.positions = positions === undefined ? [] : positions;
-		console.log(this.positions);
 	}
 }

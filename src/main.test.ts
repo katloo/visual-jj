@@ -2,10 +2,10 @@ import * as main from './main';
 import { Scenario, Position, PositionType } from './position';
 import fs from 'fs';
 
-describe('app.ts main functions', () => {
+describe('main functions', () => {
 	afterEach(() => jest.resetAllMocks());
 
-	it('reads creates a Scenario with 2 positions', async() => {
+	it('creates a Scenario with 2 positions', async() => {
 		const input = `{ "positions": [{
 					"id": 1,
 					"type": "NORMAL",
@@ -44,7 +44,7 @@ describe('app.ts main functions', () => {
 		expect(result).toEqual(expected);
 	});
 
-	it('reads creates a Scenario with 0 positions for empty JSON', async() => {
+	it('creates a Scenario with 0 positions for empty JSON', async() => {
 		const input = '{}';
 		jest.spyOn(fs.promises, 'readFile').mockResolvedValueOnce(input);
 
